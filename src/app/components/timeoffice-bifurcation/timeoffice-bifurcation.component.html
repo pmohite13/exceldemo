@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-header class="info-color white-text text-center py-4">
+    <h5>Process Bifurcation</h5>
+  </mat-card-header>
+  <mat-card-content>
+
+    <div class="mt20">
+      <fieldset>
+        <legend>Select File</legend>
+        <div id='wrapper'>
+          <input type='file' (change)="onFileChange($event)" multiple="false" id='browse'>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="text-center mt20">
+      <button mat-raised-button color="primary" (click)="export()">Process file</button>
+    </div>
+
+  </mat-card-content>
+
+</mat-card>
+
+<table class="sjs-table">
+  <tr *ngFor="let row of data">
+    <td *ngFor="let val of row">
+      {{val}}
+    </td>
+  </tr>
+</table>

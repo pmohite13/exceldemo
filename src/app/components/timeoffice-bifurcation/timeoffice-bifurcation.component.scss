@@ -1,0 +1,14 @@
+#wrapper {
+  width: 93px; /*play with this value */
+  height: 28px; /*play with this value */
+  background: url("../../../assets/file_browse_hover.png") 0 0 no-repeat;
+  border: none;
+  overflow: hidden;
+}
+
+#browse {
+  margin-left: -145px; /*play with this value */
+  opacity: 0; /* set to .5 or something so you can better position it as an overlay then back to zero again after you're done */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
